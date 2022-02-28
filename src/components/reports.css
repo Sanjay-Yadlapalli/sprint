@@ -1,0 +1,10 @@
+.reports-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0px;
+    margin-top: 30px;
+    width: 1820px;
+    height: 950px;
+}

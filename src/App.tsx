@@ -1,26 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import './App.css'
+import Navbar from './components/Navbar'
+import Sidebar from './components/Sidebar'
+import { BrowserRouter , Routes , Route } from 'react-router-dom'
+import Configurations from './components/Configurations'
+import Reports from './components/Reports'
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    <BrowserRouter>
+      <div className = 'main-container'>
+        <div>
+        <Sidebar />
+        </div>
+        <div style={{display : 'flex' , flexDirection : 'column'}}>
+          <Navbar />
+          <div style={{height : '1080px' , width : '1000px' , padding : '5px'}}>
+            <Routes>
+                <Route path = '/' element = {<Configurations />}/>
+                <Route path = '/reports-datasource' element = {<Reports />}/>
+            </Routes>
+          </div>
+        </div>
+      </div>
+      </BrowserRouter>
+    </>
+  )
 }
 
-export default App;
+export default App
