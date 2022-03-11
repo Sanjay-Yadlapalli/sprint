@@ -14,52 +14,52 @@ import { useState } from 'react';
 const widgets = [
   {
     id : 1,
-    imgUrl : 'https://cdn.freelogovectors.net/wp-content/uploads/2012/02/dell_logo_2016.png'
+    companyName : "DELL"
 
   },
   {
     id : 2,
-    imgUrl : 'https://www.freepnglogos.com/uploads/ibm-logo-png/ibm-logo-ibm-logos-download-12.png'
+    companyName : 'IBM'
     
   },
   {
     id : 3,
-    imgUrl : 'https://upload.wikimedia.org/wikipedia/commons/6/6f/HP_logo_630x630.png'
+    companyName : 'HP'
     
   },
   {
     id : 4,
-    imgUrl : 'https://cdn.freelogovectors.net/wp-content/uploads/2012/02/dell_logo_2016.png'
+    companyName : 'DELL'
     
   },
   {
     id : 5,
-    imgUrl : 'https://cdn.freelogovectors.net/wp-content/uploads/2012/02/dell_logo_2016.png'
+    companyName : 'HP'
     
   },
   {
     id : 6,
-    imgUrl : 'https://cdn.freelogovectors.net/wp-content/uploads/2012/02/dell_logo_2016.png'
+    companyName : 'DELL'
     
   },
   {
     id : 7,
-    imgUrl : 'https://cdn.freelogovectors.net/wp-content/uploads/2012/02/dell_logo_2016.png'
+    companyName : 'IBM'
     
   },
   {
     id : 8,
-    imgUrl : 'https://cdn.freelogovectors.net/wp-content/uploads/2012/02/dell_logo_2016.png'
+    companyName : 'HP'
     
   },
   {
     id : 9,
-    imgUrl : 'https://cdn.freelogovectors.net/wp-content/uploads/2012/02/dell_logo_2016.png'
+    companyName : 'DELL'
     
   },
   {
     id : 10,
-    imgUrl : 'https://cdn.freelogovectors.net/wp-content/uploads/2012/02/dell_logo_2016.png'
+    companyName : 'IBM'
     
   }
 ]
@@ -106,7 +106,7 @@ const Configurations = () => {
             <div className='details'>
               <div>
                 <div className='logo'>
-                  <img src={widget.imgUrl} alt='logo'/>
+                  <h1 style = {{marginBottom : '5px' , color : '#1ba1d6'}}>{widget.companyName}</h1>
                 </div>
                 <p style={{fontFamily : 'sans-serif' , color : '#000000' , fontWeight : '400' , fontSize : '14px'}}>Model Name</p>
               </div>
@@ -120,8 +120,8 @@ const Configurations = () => {
             </div>
             <div className='right-col'>
               <div>
-              {settings ? <div className='settings'></div> : null}
                 <SettingsIcon onClick={() => setSettings(!settings)}/>
+                {settings ? <div className='settings'></div> : null}
               </div>
               <div>
                 <BarChartIcon style={{fontSize : '35px'}}/>

@@ -76,9 +76,8 @@ img {
     width: 109px;
 }
 .logo {
-    height: 19px;
-    width: 109px;
-    margin: 2px;
+    
+    margin-bottom: 2px;
 }
 .dismiss {
     width: 412px;

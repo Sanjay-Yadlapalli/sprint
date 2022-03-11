@@ -9,7 +9,7 @@ const Navbar = () => {
     <div className='navbar-container'>
       <h2 style={{alignSelf : 'center'}}>Configuration</h2>
       <div>
-      <input style={{width : '500px' , padding : '10px' , borderRadius : '25px' , border : '0px'}} type = 'search'/>
+      <input style={{width : '700px' , padding : '10px' , borderRadius : '25px' , border : '0px'}} type = 'search'/>
       </div>
       <div style={{display : 'flex' , justifyContent : 'space-between' , alignItems : 'center' , padding : '25px'}}>
         <GitHubIcon style={{width : '75px'}}/>

@@ -8,3 +8,10 @@
     width: 1820px;
     height: 950px;
 }
+.scroll-container {
+    height : 1000px;
+    overflow-y: scroll;
+}
+.scroll-container::-webkit-scrollbar {
+    display: none;
+}
